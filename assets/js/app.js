@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const burger = document.getElementById('sidebarToggle');\r\nconst sidebar = document.getElementById('sidebar');\r\nconst page = document.getElementById('page');\r\nconst body = document.body;\r\n\r\nburger.addEventListener('click', event => {\r\n   if (body.classList.contains('show-sidebar')) {\r\n      closeSidebar()\r\n   } else {\r\n      showSidebar()\r\n   }\r\n});\r\n\r\nfunction showSidebar() {\r\n   let mask = document.createElement('div');\r\n   mask.classList.add('page__mask');\r\n   mask.addEventListener('click', closeSidebar);\r\n   page.appendChild(mask);\r\n   \r\n   body.classList.add('show-sidebar');\r\n}\r\n\r\n\r\nfunction closeSidebar() {\r\n   body.classList.remove('show-sidebar');\r\n   document.querySelector('page__mask').remove();\r\n} \n\n//# sourceURL=webpack:///./src/assets/js/mobileNav.js?");
+eval("const burger = document.getElementById('sidebarToggle');\r\nconst sidebar = document.getElementById('sidebar');\r\nconst page = document.getElementById('page');\r\nconst body = document.body;\r\n\r\nburger.addEventListener('click', event => {\r\n   if (body.classList.contains('show-sidebar')) {\r\n      closeSidebar()\r\n   } else {\r\n      showSidebar()\r\n   }\r\n});\r\n\r\nfunction showSidebar() {\r\n   let mask = document.createElement('div');\r\n   mask.classList.add('page__mask');\r\n   mask.addEventListener('click', closeSidebar);\r\n   page.appendChild(mask);\r\n   \r\n   body.classList.add('show-sidebar');\r\n}\r\n\r\n\r\nfunction closeSidebar() {\r\n   body.classList.remove('show-sidebar');\r\n   document.querySelector('.page__mask').remove();\r\n} \n\n//# sourceURL=webpack:///./src/assets/js/mobileNav.js?");
 
 /***/ }),
 
